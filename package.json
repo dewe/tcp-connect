@@ -1,6 +1,6 @@
 {
   "name": "tcp-connect",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Check once for TCP connection.",
   "main": "index.js",
   "scripts": {
