@@ -3,7 +3,7 @@
 var assert = require('chai').assert;
 var connection = require('../index')
 
-describe('test connection with connectionable', function () {
+describe('tcp-connect check if host is available', function () {
   this.slow(500);
 
   it('resolves with timing on success', function () {

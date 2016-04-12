@@ -1,10 +1,10 @@
 {
   "name": "tcp-connect",
   "version": "0.0.1",
-  "description": "Check once for TCP connection.",
+  "description": "Check if host and port is available.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,6 @@
     "grunt": "^0.4.5",
     "grunt-mocha-test": "^0.12.7",
     "grunt-release": "^0.13.0",
-    "mocha": "^2.4.5"
-  },
-  "dependencies": {
-    "chai": "^3.5.0",
     "mocha": "^2.4.5"
   }
 }
