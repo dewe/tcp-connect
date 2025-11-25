@@ -1,11 +1,15 @@
-tcp-connect:
-  build: .
-  links:
-    - tcp-server
-  command: npm test
+services:
+  tcp-connect:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    depends_on:
+      - tcp-server
+    command: npm test
 
-tcp-server:
-  image: gophernet/netcat
-  expose:
-    - "9000"
-  command: -lk -vv -p 9000 -e '/bin/sh'
+  tcp-server:
+    image: gophernet/netcat
+    expose:
+      - "9000"
+    command: -lk -vv -p 9000 -e '/bin/sh'

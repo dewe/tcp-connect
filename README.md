@@ -1,13 +1,8 @@
 # tcp-connect
-Check once for TCP connection.
 
-# Install
+Check if a TCP port is reachable. Returns connection time in milliseconds.
 
-```
-npm install tcp-connect
-```
-
-# Usage
+## Usage
 
 ```javascript
 var tcp = require('tcp-connect');
@@ -17,11 +12,10 @@ tcp(google.com, 80, 1000)
   .catch(() => console.log('no luck this time'));
 ```
 
-# Development
+## Development
 
 Tests are best run in docker:
 
-```
-docker-compose build
+```shell
 docker-compose run tcp-connect npm test
 ```
