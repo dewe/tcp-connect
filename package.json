@@ -4,7 +4,8 @@
   "description": "Check if host and port is available.",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "mocha",
+    "test-docker": "docker compose run tcp-connect npm test"
   },
   "repository": {
     "type": "git",
