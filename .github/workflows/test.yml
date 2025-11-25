@@ -1,0 +1,10 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - run: docker compose run tcp-connect sh -c "npm install && npm test"
